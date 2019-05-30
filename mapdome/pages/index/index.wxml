@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+    <map id="map4select" longitude="{{longitude}}" latitude="{{latitude}}" scale="14"  markers="{{markers}}" show-location bindcontroltap="controltap" polyline="{{polyline}}    " bindmarkertap="markertap" circles="{{circles}}" bindregionchange="regionchange" class='map'>
+
+  <cover-image class="cover-image" bindtap="my_location" src="../img/location.png" />
+
+<cover-image class="cover-image_confirm" bindtap="confirm_bag" src="../img/location.png" />
+
+    </map>
+</view>

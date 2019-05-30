@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='swiper'>
+      <swiper
+        indicator-dots="true"
+        autoplay="true"
+        interval="2000"
+        duration="200"
+        circular="true"
+        >
+        <block wx:for="{{background}}" wx:key="{{index}}">
+          <swiper-item>
+            <navigator url='{{item.url}}'>
+              <view class='swiper-item {{item.bg}}'  id="{{index}}"></view>
+            </navigator>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+  <view class="map">
+  
+    <map 
+      id="map"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}"
+      scale="14"
+      markers="{{markers}}"
+      show-location
+      style="width: 100%; height: 300px;"
+      bindmarkertap = "clickEvent"
+    ></map>
+  </view>
+</view>

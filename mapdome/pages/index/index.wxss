@@ -1,0 +1,33 @@
+.cover-image{
+
+position: absolute;
+
+top:50%;
+
+left:50%;
+
+margin-top:-25rpx;
+
+margin-left:-25rpx;
+
+width:50px;
+
+height: 50px;
+
+}
+
+.cover-image_confirm{
+
+width:50rpx;
+
+height: 50rpx;
+
+}
+
+.map{
+
+width:950rpx;
+
+height: 1002rpx;
+
+}
